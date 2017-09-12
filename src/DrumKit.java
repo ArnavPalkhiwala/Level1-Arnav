@@ -3,6 +3,7 @@
 
 import java.applet.AudioClip;
 import java.awt.GridLayout;
+import java.awt.Label;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.net.MalformedURLException;
@@ -17,7 +18,7 @@ import javax.swing.JPanel;
 
 
 public class DrumKit extends MouseAdapter {
-
+	
 	JLabel drumLabelWithImage;
 
 	public static void main(String[] args) throws Exception {
@@ -58,18 +59,20 @@ public class DrumKit extends MouseAdapter {
 
 	public void mouseClicked(MouseEvent e) {
 		// 14. When the mouse is clicked, print "mouse clicked"
-		
+		System.out.println("Mouse Clicked");
 		JLabel drumClicked = (JLabel) e.getSource();
 		// 15. Download a drum sound and drop it into your "default package". You can
+		
 		// find it on freesound.org. To download it, log in as
 		// leagueofamazing/code4life.
 		
 		// 16. If they clicked on the drumImage...
-
+		JLabel drumClicked1 = (JLabel) e.getSource();
 		// 17. ...use the playSound method to play a drum sound.
-
-		// 18. Add more images to make a drumkit. Remember to add a mouse listener to
-		// each one.
+		String sound = "Drumsound.wav";
+		playSound(sound);
+		//drumLabelWithSound = createLabelSound(sound);
+				
 	}
 
 	private JLabel createLabelImage(String fileName) throws MalformedURLException {
