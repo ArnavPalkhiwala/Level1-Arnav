@@ -1,9 +1,11 @@
+
 // Copyright Wintriss Technical Schools 2013
 import java.awt.BorderLayout;
 import java.awt.Component;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.EventObject;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -52,17 +54,29 @@ public class Jeopardy implements ActionListener {
 
 	@Override
 	public void actionPerformed(ActionEvent arg0) {
-		String answer = JOptionPane.showInputDialog("What is ?");
-		if (answer.equals("yes"))
+		String answer = JOptionPane.showInputDialog("Can a dolphin swim?");
+		if (answer.equals("what is yes"))
 			score++;
-		((JButton)arg0.getSource()).setText("");
+		((JButton) arg0.getSource()).setText("");
 		update();
-		
+
+	}
+
+	public void actionPerformed2(ActionEvent arg1) {
+		String answer = JOptionPane.showInputDialog("What state is Las Vegas in?");
+		if (answer.equals("what is new mexico"))
+
+			;
+		score++;
+		EventObject arg1 = null;
+		((JButton) arg1.getSource()).setText("");
+		update();
+
 	}
 
 	private void update() {
-		scoreBox.setText(""+score);
-		
+		scoreBox.setText("" + score);
+
 	}
 
 }
