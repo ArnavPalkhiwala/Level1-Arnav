@@ -68,8 +68,8 @@ public class Jeopardy implements ActionListener {
 
 			;
 		score++;
-		EventObject arg1 = null;
-		((JButton) arg1.getSource()).setText("");
+		EventObject arg11 = null;
+		((JButton) arg11.getSource()).setText("");
 		update();
 
 	}
