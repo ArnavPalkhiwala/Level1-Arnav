@@ -12,8 +12,12 @@
 /Jeopardy.class
 /Magic8Ball.class
 /MethodPractice.class
+/Movie.class
+/NetflixQueue.class
 /Pencil.class
 /Ruler.class
+/SeaCreature.class
+/Smurf.class
 /Spooky.wav
 /Supply.class
 /Textbook.class
@@ -22,13 +26,5 @@
 /illusion1.jpeg
 /illusion2.jpg
 /twitter4j-core-3.0.5 (1).jar
-/SeaCreatures.class
-/SeaCreature.class
-/Smurfs.class
-/Smurf.class
-/NETFLIX.class
-/Netflix.class
-/MOvie.class
-/Movie.class
-/NetflixQueue.class
 /with.class
+/NetflixRunner.class
