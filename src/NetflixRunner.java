@@ -23,10 +23,16 @@ public class NetflixRunner {
 		queue.addMovie(MrBean);
 		queue.addMovie(Moana);
 		queue.printMovies();
-		queue.getBestMovie();
 		Movie best = queue.getBestMovie();
-		System.out.println(best);
-	
+		String besttitle = best.getTitle();
+		System.out.println("The best movie is " + besttitle + ".");
+		queue.printMovies();
+		queue.sortMoviesByRating();
+		Movie second = queue.getMovie(1);
+		String secondbesttitle = second.getTitle();
+		System.out.println("The second best movie is " + secondbesttitle + ".");
+		
+		
 		
 	}
 

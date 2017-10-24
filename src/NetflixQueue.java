@@ -1,4 +1,4 @@
-//Paste the code below into 2 classes called Movie and NetflixQueue.
+ //Paste the code below into 2 classes called Movie and NetflixQueue.
 //Create your own class with a main() method that will use Movie and NetflixQueue to complete the following challenges:
 //	//1. Instantiate some Movie objects (at least 5).
 	//2. Use the Movie class to get the ticket price of one of your movies.
