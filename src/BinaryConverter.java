@@ -13,9 +13,11 @@ public class BinaryConverter{
 	JTextField answer = new JTextField(20);
 	JTextField answer2 = new JTextField(20);
 	JButton button = new JButton();
+	button.setName("Convert");
 	panel.add(answer);
 	panel.add(answer2);
 	panel.add(button);
+	
 	
 	
 	
@@ -55,4 +57,15 @@ public class BinaryConverter{
 				return 0;
 			}
 	}
+	
+	
 }
+
+
+
+
+
+
+
+
+FootballPlayer JulianEdelman = new FootballPlayer(11, "JulianEdelman", true);
