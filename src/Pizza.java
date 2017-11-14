@@ -5,18 +5,18 @@ public class Pizza {
 	private String size;
 
 	public static void main(String[] args) {
-		Pizza pizza1 = new Pizza(7.95, 10, 250, "Large");
-		Pizza pizza2 = new Pizza(10.50, 6, 110, "Small");
-		Pizza pizza3 = new Pizza(3.00, 4, 300, "Medium");
-		Pizza pizza4 = new Pizza(5.50, 8, 430, "Extra Large");
+		Pizza pizza1 = new Pizza(7.95, 10, 1882, "large");
+		Pizza pizza2 = new Pizza(10.50, 6, 483, "small");
+		Pizza pizza3 = new Pizza(3.00, 4, 966, "medium");
+		Pizza pizza4 = new Pizza(5.50, 8, 2010, "extra large");
 		System.out.println(pizza1.getTastiness());
 		pizza1.setTastiness(8);
 		int secondTasty = pizza1.getTastiness();
 		System.out.println(secondTasty);
-		System.out.println(pizza2.getPrice());
+		System.out.println("$" + pizza2.getPrice());
 		pizza2.setPrice(11.50);
 		double secondPrice = pizza2.getPrice();
-		System.out.println(secondPrice);
+		System.out.println("$" + secondPrice);
 
 	}
 
@@ -25,6 +25,47 @@ public class Pizza {
 		this.tastiness = tastiness;
 		this.calories = calories;
 		this.size = size;
+
+	}
+
+	public boolean isHealthy() {
+		if (this.size == "small") {
+			if (this.calories < 500) {
+				return true;
+			} else {
+				return false;
+
+			}
+		}
+
+		else if (this.size == "medium") {
+			if (this.calories < 1000) {
+				return true;
+			} else {
+				return false;
+
+			}
+		}
+
+		else if (this.size == "large") {
+			if (this.calories < 1500) {
+				return true;
+			} else {
+				return false;
+
+			}
+		}
+
+		else if (this.size == "extra large") {
+			if (this.calories < 2000) {
+				return true;
+			} else {
+				return false;
+
+			}
+		}
+
+		return false;
 	}
 
 	public double getPrice() {
