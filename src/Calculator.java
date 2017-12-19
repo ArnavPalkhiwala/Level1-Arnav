@@ -65,7 +65,7 @@ public class Calculator implements ActionListener {
 		else if (e.getSource() == subtraction) {
 			double answer2 = number1 - number2;
 			String Answer2 = Double.toString(answer2);
-			textfield3.setText(Answer2);
+			 textfield3.setText(Answer2);
 
 		}
 		else if (e.getSource() == multiplication) {
