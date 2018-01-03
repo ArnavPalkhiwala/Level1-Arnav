@@ -1,6 +1,5 @@
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-
 import javax.swing.BoxLayout;
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -17,10 +16,9 @@ public class ATM implements ActionListener {
 	JButton withdraw = new JButton();
 	JTextField amountdep = new JTextField();
 	JTextField available = new JTextField();
-
-
+	double amount = 100.00;
 	JTextField amountwith = new JTextField();
-	
+
 	public static void main(String[] args) {
 		ATM ATM = new ATM();
 		ATM.run();
@@ -33,7 +31,7 @@ public class ATM implements ActionListener {
 		withdraw.setText("Withdraw:");
 		amountdep.setText("Amount");
 		amountwith.setText("Amount");
-		available.setText("Available: $100");
+		available.setText("Available: $" + amount);
 		panel1.add(deposit);
 		panel1.add(amountdep);
 		panel2.add(withdraw);
@@ -53,7 +51,26 @@ public class ATM implements ActionListener {
 		// TODO Auto-generated method stub
 		e.getSource();
 		
-		}
-		
-	}
+		String depositvalue = amountdep.getText();
+double valuedeposit = Double.parseDouble(depositvalue); 
 
+		if(e.getSource() == deposit){
+		amount = amount + valuedeposit;
+		available.setText("Available: $" + amount);
+
+	
+	}
+	
+		String withdrawvalue = amountwith.getText();
+		double valuewithdraw = Double.parseDouble(withdrawvalue);
+		
+		 if(e.getSource() == withdraw) {
+		amount = amount - valuewithdraw;
+		available.setText("Available: $" + amount);
+
+	}
+	
+	
+	}
+}
+	

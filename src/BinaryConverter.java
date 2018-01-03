@@ -68,4 +68,3 @@ public class BinaryConverter{
 
 
 
-FootballPlayer JulianEdelman = new FootballPlayer(11, "JulianEdelman", true);
