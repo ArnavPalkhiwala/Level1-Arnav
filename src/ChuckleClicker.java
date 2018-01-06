@@ -12,7 +12,6 @@ public class ChuckleClicker implements ActionListener {
 	JButton button1 = new JButton();
 	JButton button2 = new JButton();
 
-
 	public static void main(String[] args) {
 		ChuckleClicker ChuckleClicker = new ChuckleClicker();
 		ChuckleClicker.makeButtons();
@@ -28,13 +27,22 @@ public class ChuckleClicker implements ActionListener {
 		button2.setText("Punchline");
 		button1.addActionListener(this);
 		button2.addActionListener(this);
-		
+
 	}
 
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		// TODO Auto-generated method stub
 		JOptionPane.showMessageDialog(null, "Hi");
+
+		if (e.getSource() == button1) {
+			JOptionPane.showMessageDialog(null, "Why did the football player go to the bank?       Because he wanted to get his quarter back!!");
+		}
+		
+		if (e.getSource() == button2) {
+			JOptionPane.showMessageDialog(null, "This is  my punchline");;
+		}
+
 	}
 
 }
