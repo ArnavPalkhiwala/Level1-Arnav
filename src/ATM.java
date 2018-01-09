@@ -1,8 +1,10 @@
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+
 import javax.swing.BoxLayout;
 import javax.swing.JButton;
 import javax.swing.JFrame;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
@@ -50,27 +52,30 @@ public class ATM implements ActionListener {
 	public void actionPerformed(ActionEvent e) {
 		// TODO Auto-generated method stub
 		e.getSource();
-		
-		String depositvalue = amountdep.getText();
-double valuedeposit = Double.parseDouble(depositvalue); 
 
-		if(e.getSource() == deposit){
-		amount = amount + valuedeposit;
-		available.setText("Available: $" + amount);
+		if (e.getSource() == deposit) {
+			String depositvalue = amountdep.getText();
+			double valuedeposit = Double.parseDouble(depositvalue);
+			amount = amount + valuedeposit;
+			available.setText("Available: $" + amount);
 
-	
-	}
-	
-		String withdrawvalue = amountwith.getText();
-		double valuewithdraw = Double.parseDouble(withdrawvalue);
-		
-		 if(e.getSource() == withdraw) {
-		amount = amount - valuewithdraw;
-		available.setText("Available: $" + amount);
+		}
 
-	}
-	
-	
+		if (e.getSource() == withdraw) {
+
+			String withdrawvalue = amountwith.getText();
+			double valuewithdraw = Double.parseDouble(withdrawvalue);
+
+			if (valuewithdraw <= amount) {
+				amount = amount - valuewithdraw;
+				available.setText("Available: $" + amount);
+			}
+
+			else if (valuewithdraw > amount) {
+
+				JOptionPane.showMessageDialog(null, "Sorry, you do not have enough money to complete this transaction");
+			}
+		}
+
 	}
 }
-	

@@ -28,6 +28,7 @@
 /PizzaRobot.class
 /Ruler.class
 /SeaCreature.class
+/SimonSays.class
 /SlotMachine.class
 /Smurf.class
 /Spooky.wav
@@ -40,12 +41,13 @@
 /Tweet.class
 /WackAMole.class
 /commons-logging-1.1.3.jar
+/downarrow.jpg
 /illusion1.jpeg
 /illusion2.jpg
-/twitter4j-core-3.0.5 (1).jar
-/SimonSasys.class
-/SimonSays.class
-/uparrow.jpg
-/downarrow.jpg
 /leftarrow.jpg
 /rightarrow.png
+/twitter4j-core-3.0.5 (1).jar
+/uparrow.jpg
+/PartyButton.class
+/party.png
+/fireworks.wav
