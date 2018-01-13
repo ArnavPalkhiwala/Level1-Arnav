@@ -23,6 +23,7 @@
 /Movie.class
 /NetflixQueue.class
 /NetflixRunner.class
+/PartyButton.class
 /Pencil.class
 /Pizza.class
 /PizzaRobot.class
@@ -42,12 +43,15 @@
 /WackAMole.class
 /commons-logging-1.1.3.jar
 /downarrow.jpg
+/fireworks.wav
 /illusion1.jpeg
 /illusion2.jpg
 /leftarrow.jpg
+/party.png
 /rightarrow.png
 /twitter4j-core-3.0.5 (1).jar
 /uparrow.jpg
-/PartyButton.class
-/party.png
-/fireworks.wav
+/download.png
+/RobotArmy.class
+/Human.class
+/Robot.class
