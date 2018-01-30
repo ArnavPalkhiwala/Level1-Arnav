@@ -22,6 +22,8 @@
 /Magic8Ball.class
 /MethodPractice.class
 /Movie.class
+/NBAControlPanel.class
+/NBAScoreboard.class
 /NetflixQueue.class
 /NetflixRunner.class
 /PartyButton.class
@@ -31,7 +33,6 @@
 /Robot.class
 /RobotArmy.class
 /Ruler.class
-/Scoreboard.class
 /SeaCreature.class
 /SimonSays.class
 /SlotMachine.class
@@ -55,5 +56,3 @@
 /rightarrow.png
 /twitter4j-core-3.0.5 (1).jar
 /uparrow.jpg
-/NBAScoreboard.class
-/NBAControlPanel.class

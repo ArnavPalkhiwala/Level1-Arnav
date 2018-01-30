@@ -82,31 +82,31 @@ public class NBAScoreboard {
 
 
 	public void changehomePoints(int homepoints) {
-		this.homeScore = homepoints;
+		this.homeScore += homepoints;
 		this.home.setText("Home Score: " + homeScore);
 
 	}
 
 	public void changeawayPoints(int visitorspoints) {
-		this.visitorScore = visitorspoints;
+		this.visitorScore += visitorspoints;
 		this.visitors.setText("Visitors Score: " + visitorScore);
 
 	}
 
 	public void changehomeFouls(int homefouls) {
-		this.homeFouls = homefouls;
+		this.homeFouls += homefouls;
 	}
 	
 	public void changevisitorFouls(int visitorsfouls) {
-		this.visitorFouls = visitorsfouls;
+		this.visitorFouls += visitorsfouls;
 	}
 	
 	public void changehomeTO(int hometimeouts) {
-		this.homeTimeouts = hometimeouts;
+		this.homeTimeouts += hometimeouts;
 	}
 	
 	public void changevisitorTO(int visitortimeouts) {
-		this.visitorTimeouts = visitortimeouts;
+		this.visitorTimeouts += visitortimeouts;
 	}
 
 }
