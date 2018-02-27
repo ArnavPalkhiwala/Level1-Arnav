@@ -32,7 +32,6 @@ public class NBAScoreboard {
 	int homeTimeouts;
 	int visitorTimeouts;
 
-
 	public NBAScoreboard() {
 
 		this.homeName = "Home";
@@ -80,12 +79,11 @@ public class NBAScoreboard {
 
 	}
 
-
 	public void changehomePoints(int homepoints) {
 		this.homeScore += homepoints;
 		this.home.setText("Home Score: " + homeScore);
 		this.home.setText(Home + ": " + homeScore);
-		
+
 	}
 
 	public void changeawayPoints(int visitorspoints) {
@@ -99,17 +97,17 @@ public class NBAScoreboard {
 		this.homeFouls += homefouls;
 		this.homefouls.setText(" Fouls: " + homeFouls);
 	}
-	
+
 	public void changevisitorFouls(int visitorsfouls) {
 		this.visitorFouls += visitorsfouls;
 		this.visitorsfouls.setText("Fouls : " + visitorFouls);
 	}
-	
+
 	public void changehomeTO(int hometimeouts) {
 		this.homeTimeouts += hometimeouts;
 		this.hometimeouts.setText("Timeouts : " + homeTimeouts);
 	}
-	
+
 	public void changevisitorTO(int visitortimeouts) {
 		this.visitorTimeouts += visitortimeouts;
 		this.visitorsTimeouts.setText("Timeouts : " + visitorTimeouts);
